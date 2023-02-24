@@ -1,0 +1,13 @@
+.container {
+  max-width: 600px;
+}
+.btn {
+  /* background: #43d9ba; */
+  background: #4378d9;
+  color: white;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn:focus {
+  outline: none !important;
+}

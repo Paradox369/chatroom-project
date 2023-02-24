@@ -13,7 +13,54 @@
     <link rel="stylesheet" href="index.css" />
     <title>paradox chatroom project</title>
   </head>
+
   <body>
+    <!-- container and title -->
+    <div class="container my-4">
+      <h1 class="my-4 text-center">paradox chat</h1>
+
+      <!-- buttons for charooms -->
+      <div class="chat-rooms mb-3 text-center">
+        <div class="my-2">choose a chatroom</div>
+        <button class="btn" id="general">#general</button>
+        <button class="btn" id="gaming">#gaming</button>
+        <button class="btn" id="music">#music</button>
+        <button class="btn" id="ninjas">#ninjas</button>
+      </div>
+
+      <!-- chatlist / window -->
+      <div class="chat-window">
+        <ul class="chat-list list-group"></ul>
+      </div>
+
+      <!-- new chat form -->
+      <form class="new-chat my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">your message:</div>
+          </div>
+          <input type="text" class="form-control" id="message" required />
+          <div class="input-group-append">
+            <input type="submit" value="send" class="btn" />
+          </div>
+        </div>
+      </form>
+
+      <!-- update name form -->
+      <form class="new-name my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">update name:</div>
+          </div>
+          <input type="text" class="form-control" id="name" required />
+          <div class="input-group-append">
+            <input type="submit" value="update" class="btn" />
+          </div>
+        </div>
+        <div class="update-mssg"></div>
+      </form>
+    </div>
+
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
     <script src="scripts/index.js"></script>
